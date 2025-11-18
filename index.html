@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Бронювання квитків</h2>
+
+<div class="search-panel">
+    <div class="control-group">
+        <label>Напрямок:</label>
+        <select id="direction">
+            <option value="Odessa - Lviv">Odessa - Lviv</option>
+            <option value="Kyiv - Kharkiv">Kyiv - Kharkiv</option>
+            <option value="Dnipro - Kyiv">Dnipro - Kyiv</option>
+        </select>
+    </div>
+
+    <div class="control-group">
+        <label>Дата:</label>
+        <input type="date" id="date">
+    </div>
+
+    <div class="control-group" style="justify-content: flex-end;">
+        <button onclick="showSeats()">Search</button>
+    </div>
+</div>
+
+<div id="seat-section">
+    <div class="wagon-container">
+        <div class="seats-grid" id="seats-grid">
+        </div>
+    </div>
+
+    <div class="booking-actions">
+        <div class="price-tag">Total price: <span id="total-price">0</span>$</div>
+        <button onclick="bookTickets()">Book</button>
+    </div>
+</div>
+
+<h2>My tickets:</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Direction</th>
+        <th>Date</th>
+        <th>Seat</th>
+    </tr>
+    </thead>
+    <tbody id="tickets-body">
+    </tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6e8;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.search-panel {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select, input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+#seat-section {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.wagon-container {
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    overflow-x: auto;
+}
+
+.seats-grid {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 5px;
+    min-width: 600px;
+}
+
+.seat-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    background: white;
+}
+
+.seat-wrapper input {
+    cursor: pointer;
+}
+
+.seat-wrapper span {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.booking-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.price-tag {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1.1em;
+}
